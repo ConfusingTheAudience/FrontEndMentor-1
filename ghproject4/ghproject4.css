@@ -1,0 +1,300 @@
+.exercise1, .exercise2, .exercise3 {
+    width: 1200px;
+    height: 800px;
+    display: flex;
+    align-items: center;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .exercise1 {
+    background-color: lightblue;
+  }
+  
+  .qr {
+    width: 13vw;
+    background-color: white;
+    border-radius: 10%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .qr * {
+    margin-bottom: 10px;
+  }
+  
+  .qr__image {
+    width: 100%;
+    height: 250px;
+    border-radius: 25px;
+    object-fit: cover;
+  }
+  
+  .qr__title {
+    font-size: 1.2rem;
+  }
+  
+  .qr__paragraph {
+    font-size: 0.9rem;
+  }
+  
+  .exercise2 {
+    background-color: lightgreen;
+  }
+  
+  .cryptocard {
+    width: 16vw;
+    background-color: #009186;
+    border-radius: 10%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10%;
+  }
+  
+  .cryptocard * {
+    margin-bottom: 10px;
+  }
+  
+  .cryptocard__imagebox {
+    position: relative;
+  }
+  
+  .cryptocard__imagebox__image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+  
+  .cryptocard__imagebox__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95%;
+    border-radius: 25px;
+    background-color: black;
+    opacity: 0;
+  }
+  
+  .cryptocard__imagebox__overlay--hover:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  
+  .cryptocard__title {
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  .cryptocard__link {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .cryptocard__link--hover:hover {
+    color: #00ffff;
+  }
+  
+  .cryptocard__paragraph {
+    color: lightblue;
+    margin: 20px 0;
+  }
+  
+  .cryptocard__information {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cryptocard__details {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .cryptocard__details_icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .cryptocard__details_paragraph {
+    color: #00ffff;
+    align-self: center;
+  }
+  
+  .cryptocard__details2 {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .cryptocard__details2_paragraph2 {
+    color: lightblue;
+    align-self: center;
+  }
+  
+  .cryptocard__footer {
+    position: relative;
+    display: flex;
+    gap: 5px;
+    padding-top: 20px;
+  }
+  
+  .cryptocard__footer::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 1px solid lightblue;
+  }
+  
+  .cryptocard__footer__justcircle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+  }
+  
+  .cryptocard__footer__paragraph {
+    color: lightblue;
+    align-self: center;
+  }
+  
+  .cryptocard__footer__link {
+    text-decoration: none;
+    color: #dbdbdb;
+  }
+  
+  .cryptocard__footer__link--hover:hover {
+    color: #00ffff;
+  }
+  
+  .exercise3 {
+    background-color: lightcoral;
+  }
+  
+  .card {
+    width: 20vw;
+    background-color: white;
+    border-radius: 10%;
+    border-radius: 10%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .card__image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+  }
+  
+  .card .cardbox {
+    padding: 30px;
+  }
+  
+  .card .cardbox > * {
+    margin-bottom: 20px;
+  }
+  
+  .card .cardbox__paragraph {
+    font-size: 1.4rem;
+  }
+  
+  .card .cardbox__plain {
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  
+  .card .cardbox__plain__justcircle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+  }
+  
+  .card .cardbox__plain__howmuch__title2 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+  }
+  
+  .card .cardbox__plain__howmuch__paragraph2 {
+    letter-spacing: 1px;
+  }
+  
+  .card .cardbox__btns {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .card .cardbox__btns__btn {
+    border-radius: 10px;
+    background-color: #5e00a3;
+    color: white;
+    height: 50px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .card .cardbox__btns__btn--btn2 {
+    background-color: transparent;
+    color: #252525;
+    font-weight: 700;
+  }
+  
+  @media only screen and (max-width: 1800px) {
+    .exercise1 {
+      width: 100%;
+      height: 600px;
+    }
+    .qr {
+      width: 90%;
+      height: 90%;
+      padding: 20px;
+    }
+    .qr * {
+      margin-bottom: 20px;
+    }
+    .qr__image {
+      width: 100%;
+      height: 250px;
+      border-radius: 25px;
+    }
+    .qr__title {
+      font-size: 2.2rem;
+    }
+    .qr__paragraph {
+      font-size: 1.6rem;
+    }
+    .exercise2 {
+      width: 100%;
+    }
+    .cryptocard {
+      width: 70%;
+    }
+    .exercise3 {
+      width: 100%;
+    }
+    .card {
+      width: 70%;
+    }
+  }
+  
